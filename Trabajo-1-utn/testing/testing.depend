@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1554356962 source:c:\users\shamorro\desktop\trabajo-1-utn\testing\chamo.c
+
+1554359401 source:c:\users\alumno\desktop\trabajo-1-utn-master\testing\chamo.c
+
+1554359401 source:c:\users\alumno\desktop\trabajo-1-utn-master\testing\main.c
+	<stdio.h>
+	<stdlib.h>
+	"chamo.h"
+
+1554359401 c:\users\alumno\desktop\trabajo-1-utn-master\testing\chamo.h
+
