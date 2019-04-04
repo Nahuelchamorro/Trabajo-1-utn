@@ -6,8 +6,7 @@ int mostrarmenu()
 int main()
 {
     char seguir='s';
-    int operando1;
-    int operando2;
+
 
     do
     {
@@ -23,10 +22,10 @@ int main()
         printf("opcion 3- Realizar calculos\n");
         printf("Sus calculos serán realizados, utilice la opción siguiente porfavor\n")
       case 4:
-        printf("El resultado de A+B es:%d",suma);
-        printf("El resultado de A-B es:%d",resta);
-        printf("El resultado de A*B es:%d",multiplicacion);
-        printf("El resultado de A/B es:%f",division);
+        printf("El resultado de A+B es:%d",resultado1);
+        printf("El resultado de A-B es:%d",resultado2;
+        printf("El resultado de A*B es:%d",resultado3);
+        printf("El resultado de A/B es:%f",resultado4);
         printf("El resultado del factorial de A es:%d",factorial1);
         printf("El resultado de B es:%d",factorial2);
 
