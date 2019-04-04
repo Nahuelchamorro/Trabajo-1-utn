@@ -1,53 +1,69 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "chamo.h"
-int mostrarmenu()
+int mostrarmenu();
 
 int main()
 {
     char seguir='s';
+    int opcion=0;
+    int operando1;
+    int operando2;
 
+    printf("Ingrese el operando1\n");
+    scanf("%d",&operando1);
+    printf("Ingrese el operando2\n");
+    scanf("%d",&operando2);
 
-    do
-    {
-      switch(mostrarmenu())
-      {
-      case 1:
-        Printf("opcion 1- Ingrese operando\n");
-        scanf("%d",&operando1);
-      case 2:
-        printf("opcion 2- ingrese segundo operando\n");
-        scanf("%d",&operando2);
-      case 3:
-        printf("opcion 3- Realizar calculos\n");
-        printf("Sus calculos serán realizados, utilice la opción siguiente porfavor\n")
-      case 4:
-        printf("El resultado de A+B es:%d",resultado1);
-        printf("El resultado de A-B es:%d",resultado2;
-        printf("El resultado de A*B es:%d",resultado3);
-        printf("El resultado de A/B es:%f",resultado4);
-        printf("El resultado del factorial de A es:%d",factorial1);
-        printf("El resultado de B es:%d",factorial2);
-
-
-      }
-    }
-    return 0;
-}
-
-int mostrarmenu()
+       while(seguir=='s')
 {
-    int opcion;
+       printf("calcular la suma\n");
+       printf("calcular la resta\n");
+       printf("calcular la multiplicacion\n");
+       printf("calcular la division\n");
+       printf("calcular el factorial del operando1\n");
+       printf("calcular el factorial del operando2\n");
+       printf("Salir\n");
+       scanf("%d",&opcion);
 
-    system("cls");
-    printf("***Menu de opciones***\n\n");
-    printf("1- Ingresar primer operando \n");
-    printf("2- Ingresar segundo operando \n");
-    printf("3- Calcular \n");
-    printf("4- Dar resultados \n");
-    printf("5- Salir \n");
-    scanf("%d",&opcion);
+       switch(opcion)
+{
+      case 1:
+        printf("El resultado de A+B es:%d\n",resultado1(int operando1, int operando2));
+        break;
+      case 2:
+        printf("El resultado de A-B es:%d\n",resultado2(int operando1, int operando2));
+        break;
+      case 3:
+        printf("El resultado de A*B es:%d\n",resultado3(int operando1, int operando2));
+        break;
+      case 4:
+        printf("El resultado de A/B es:%f\n",resultado4(int operando1, int operando2));
+        break;
+      case 5:
+        printf("El resultado del factorial de A es:%d\n",factorial1(int operando1));
+        break;
+      case 6:
+        printf("El resultado de B es:%d\n",factorial2(int operando2));
+        break;
+      case 7:
+        seguir='no';
+        break;
 
-    return opcion;
+
+
+
 
 }
+
+
+
+
+
+
+}
+  return 0;
+}
+
+
+

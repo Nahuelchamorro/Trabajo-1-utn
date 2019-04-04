@@ -24,7 +24,7 @@ float resultado4(int operando1, int operando2)
 }
 int factorial1(int operando1)
 {
-int operando1, b, fact1 = 1;
+int b, fact1 = 1;
 
 for (b = operando1 ; b > 1; b--)
 {
@@ -35,8 +35,8 @@ for (b = operando1 ; b > 1; b--)
 
 int factorial2(int operando2)
 {
-int operando2, b2, fact2 = 1;
-for (b = operando2 ; b2 > 1; b2--)
+int b2, fact2 = 1;
+for (b2 = operando2 ; b2 > 1; b2--)
 {
     fact2 = fact2 * b2;
 }
